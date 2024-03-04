@@ -1,0 +1,24 @@
+[0;1;32m●[0m rabbitmq-server.service - RabbitMQ broker
+     Loaded: loaded (/usr/lib/systemd/system/rabbitmq-server.service; enabled; vendor preset: disabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2024-02-21 10:58:34 +0530; 36s ago
+   Main PID: 494265 (beam.smp)
+     Status: "Initialized"
+      Tasks: 35 (limit: 18876)
+     Memory: 85.7M
+        CPU: 5.409s
+     CGroup: /system.slice/rabbitmq-server.service
+             ├─494265 /usr/lib64/erlang/erts-11.2.2.8/bin/beam.smp -W w -MBas ageffcbf -MHas ageffcbf -MBlmbcs 512 -MHlmbcs 512 -MMmcs 30 -P 1048576 -t 5000000 -stbt db -zdbbl 128000 -sbwt none -sbwtdcpu none -sbwtdio none -- -root /usr/lib64/erlang -progname erl -- -home /var/lib/rabbitmq -- -pa  -noshell -noinput -s rabbit boot -boot start_sasl -lager crash_log false -lager handlers []
+             ├─494274 erl_child_setup 1024
+             ├─494349 inet_gethost 4
+             └─494350 inet_gethost 4
+
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   TLS Library: OpenSSL - OpenSSL 1.1.1l  FIPS 24 Aug 2021
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   Doc guides:  https://rabbitmq.com/documentation.html
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   Support:     https://rabbitmq.com/contact.html
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   Tutorials:   https://rabbitmq.com/getstarted.html
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   Monitoring:  https://rabbitmq.com/monitoring.html
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   Logs: /var/log/rabbitmq/rabbit@shivanka.log
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:         /var/log/rabbitmq/rabbit@shivanka_upgrade.log
+Feb 21 10:58:31 shivanka.bridgefund.local rabbitmq-server[494265]:   Config file(s): /etc/rabbitmq/rabbitmq.conf
+Feb 21 10:58:34 shivanka.bridgefund.local rabbitmq-server[494265]:   Starting broker... completed with 0 plugins.
+Feb 21 10:58:34 shivanka.bridgefund.local systemd[1]: Started RabbitMQ broker.
